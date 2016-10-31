@@ -47,8 +47,8 @@ app.get('/about', (req, resp) => {
     });
 });
 
-app.get('/programs', (req, resp) => {
-    resp.render('programs.hbs', {
+app.get('/projects', (req, resp) => {
+    resp.render('projects.hbs', {
         pageTitle: 'Programs Page',
         pageMessage: 'Here is a list of my current programs',
         programs: 'Simple notes app'

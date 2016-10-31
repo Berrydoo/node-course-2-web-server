@@ -47,6 +47,15 @@ app.get('/about', (req, resp) => {
     });
 });
 
+app.get('/programs', (req, resp) => {
+    resp.render('programs.hbs', {
+        pageTitle: 'Programs Page',
+        pageMessage: 'Here is a list of my current programs',
+        programs: 'Simple notes app'
+    });
+});
+
+
 app.get('/bad', (req, resp) => {
     resp.send({
         errorMessage: "Aw snap! That's not good!"
